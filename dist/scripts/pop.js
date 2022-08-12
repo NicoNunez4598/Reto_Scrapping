@@ -1,0 +1,1 @@
+(()=>{function r(e,t=document.body){return t.querySelector(e)}r("#search-form").addEventListener("submit",async e=>{e.preventDefault();let t=r("#to-search",e.target).value,o="https://www.linkedin.com/search/results/people/?keywords="+t,{id:s}=await chrome.tabs.create({url:o}),c={target:{tabId:tab.id},files:["scripts/scrapCandidates.js"]};chrome.scripting.executeScript(c)});})();

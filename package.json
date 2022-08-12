@@ -1,0 +1,20 @@
+{
+  "name": "Krowdy_Bootcamp",
+  "version": "1.0.0",
+  "main": "sw.js",
+  "author": "NicoNunez4598 <88166508+NicoNunez4598@users.noreply.github.com>",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node config/esbuild.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.53",
+    "json-server": "^0.17.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.4",
+    "dexie": "^3.2.2"
+  }
+}
