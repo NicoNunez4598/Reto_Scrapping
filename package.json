@@ -9,12 +9,23 @@
     "dev": "node config/esbuild.js"
   },
   "devDependencies": {
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.2",
+    "@types/restify": "^8.5.5",
     "esbuild": "^0.14.53",
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "dayjs": "^1.11.4",
-    "dexie": "^3.2.2"
+    "dexie": "^3.2.2",
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "restify": "^8.6.1",
+    "restify-router": "^0.6.2",
+    "schm": "^0.4.1"
   }
 }
