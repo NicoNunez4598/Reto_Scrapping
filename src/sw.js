@@ -35,14 +35,14 @@ chrome.runtime.onConnect.addListener((port)=>{
                 //inyectScrapCandidates(tabId)
             })
             break;
-        case secureChannels[1]:
+        /*case secureChannels[1]:
             port.onMessage.addListener(async ({profile}, {sender:{tab: {id: tabId}}})=>{
                 db.profiles.add(profile)
                 const [urlsRaw] = await db.urlCandidates.toArray()
                 await chrome.tabs.update(tabId, {url: urlsRaw.urls[1]})
                 inyectScript(tabId, 'scripts/scrapper.js')
             })
-            break;
+            break;*/
     
         default:
             break;
